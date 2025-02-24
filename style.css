@@ -37,13 +37,13 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 500px #78290F;
+  box-shadow: inset 0 0 500px #F6EDDC;
   /* border-radius: 10px; */
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #F6EDDC;
+  background: #78290F;
   border-radius: 10px;
 }
 
@@ -56,20 +56,22 @@
 
 @media (min-width: 992px) and (max-width: 1800px) {
   @keyframes appear {
-      from {
-          opacity: 0;
-          /* clip-path: inset(100% 100% 0 0); */
-          /* transform: translateY(1000px); */
-          transform: translate(-1000px);
-      }
+    from {
+      opacity: 0;
+      /* clip-path: inset(100% 100% 0 0); */
+      /* transform: translateY(1000px); */
+      transform: translate(-1000px);
+    }
 
-      to {
-          opacity: 1;
-          clip-path: inset(0 0 0 0);
-      }
+    to {
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+    }
   }
 }
-#animation, #about {
+
+#animation,
+#about {
   animation: appear 3s linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
@@ -112,40 +114,77 @@
     padding: 30px !important;
     margin: 3px 3px 3px 3px;
   }
+
   .l1 {
-    padding: 50px 50px 50px 50px !important;  
+    padding: 50px 50px 50px 50px !important;
     margin-bottom: 15px;
     border: 01px solid #78290F;
     border-radius: 30px;
   }
+
   .shop-btn {
     display: none;
   }
+
   .video-text {
     font-size: 25px !important;
     padding: 0px !important;
   }
+
   .brand-text {
     padding-left: 8px;
   }
+
   .footer-heading .footer-link {
     text-align: center;
+  }
+
+  .product-container {
+    margin-top: 100px;
+    margin-bottom: 200px;
+    padding: 0px !important;
+    border: none !important;
+  }
+
+  .pr-img img {
+    border-radius: 30px;
+    width: 100%;
+
+  }
+
+  .pr-img {
+    border: 1px solid #78290F;
+    border-radius: 30px;
+    margin: 5px 5px 5px 5px;
+  }
+
+  .pr-title {
+    font-family: "Instrument Serif", serif;
+    font-size: 40px !important;
+    margin-top: 10px;
+    font-weight: 400;
+    line-height: 1;
+    color: #78290F;
+    margin-bottom: 15px;
+
+  }
+
+  .pr-price {
+    font-size: 15px !important;
+    margin-bottom: 30px;
+
+  }
+
+  .pr-desc {
+    font-size: 18px !important;
+    font-style: italic;
+
+
   }
 
 
 }
 
-/* Small Devices (Tablets) */
-@media (min-width: 577px) and (max-width: 768px) {}
-
-/* Medium Devices (Laptops, Small Desktops) */
-@media (min-width: 769px) and (max-width: 1024px) {}
-
-/* Large Devices (Desktops) */
-@media (min-width: 1025px) and (max-width: 1200px) {}
-
-/* Extra Large Devices (Big Screens, TVs) */
-@media (min-width: 1201px) {}
 
 /* Media Query */
 
@@ -627,6 +666,8 @@ p {
 
 .l1 {
   padding: 160px 50px 50px 50px;
+  top: 50%;
+  left: 50%;
   border: 01px solid #78290F;
   border-radius: 30px;
 }
@@ -754,5 +795,84 @@ h5 {
 }
 
 .author:hover {
+  color: #F6EDDC;
+}
+
+/* Extra Large Devices (Big Screens, TVs) */
+@media (min-width: 1201px) {
+  .wl1 {
+    margin-top: 50px;
+  }
+
+  .l1 {
+    padding: 160px 50px 50px 50px;
+    top: 50%;
+    left: 50%;
+    border: 01px solid #78290F;
+    border-radius: 30px;
+  }
+
+  .l1>p {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.product-container {
+  margin-top: 100px;
+  margin-bottom: 200px;
+  padding: 60px;
+  border: 2px solid #78290F;
+  border-radius: 30px;
+}
+
+.pr-img img {
+  border-radius: 30px;
+  width: 100%;
+
+}
+
+.pr-img {
+  border: 1px solid #78290F;
+  border-radius: 30px;
+}
+
+.pr-title {
+  font-family: "Instrument Serif", serif;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 1;
+  color: #78290F;
+  margin-bottom: 15px;
+
+}
+
+.pr-price {
+  font-size: 20px;
+  margin-bottom: 30px;
+
+}
+
+.pr-desc {
+  font-size: 24px;
+  font-style: italic;
+
+
+}
+
+.pr-btn {
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px 30px 10px 30px;
+  background-color: #f6eddc;
+  border-radius: 30px;
+  color: #78290F;
+  border: 1px solid #78290F;
+  font-size: 18px;
+}
+
+.pr-btn:hover {
+  background-color: #78290F;
   color: #F6EDDC;
 }
